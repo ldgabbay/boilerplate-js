@@ -1,7 +1,7 @@
 module.exports = function( grunt ) {
     "use strict";
 
-    var library_name = "daxee";
+    var library_name = "widget";
     var filelist = [].concat(["wrap/intro.js"], grunt.file.readJSON("build/filelist.json"), ["wrap/outro.js"]);
 
     console.log(filelist);
@@ -52,7 +52,7 @@ module.exports = function( grunt ) {
                     beautify: {
                         ascii_only: true
                     },
-                    banner: "/* (c) 2015 Daxee */",
+                    banner: "/* (c) 2015 Widget */",
                     compress: {
                         hoist_funs: false,
                         loops: false,
